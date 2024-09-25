@@ -7,11 +7,16 @@
     </head>
 
     <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .box {
+            display: grid;
             justify-content: center;
+            align-items: center;
+        }
+
+        .box > * {
+            margin: 5px;
+            background-color: rgb(219, 219, 219);
+            opacity: 90%;
         }
     </style>
     <body>
@@ -19,7 +24,7 @@
         <form
             action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html"
             method="get"
-            class="container"
+            class="box"
         >
             <div>
                 <label for="recipe_name">Recipe Name:</label><br />
